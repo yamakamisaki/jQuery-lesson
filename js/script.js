@@ -39,16 +39,20 @@ $(function(){
     }
   });
 
-  $(document).on('click keydown',(e)=>{
-    if(e.type === 'click'){
-      $('#aaa').text('クリックされました！');
-    }
-    // キーが押された場合
-    if(e.type === 'keydown'){
-      $('#aaa').text('キーが押されました！');
-    }
+
+  $('#blue').on('click',()=>{
+    $('#target').toggleClass('sample');
   });
 
+  $('#has').on('click',()=>{
+    let result = $('#target').hasClass('sample');
+  
+    if(result){
+      console.log('ある！');
+    } else{
+      console.log('ない！');
+    }
+  });
 
 });
 

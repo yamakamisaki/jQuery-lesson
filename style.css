@@ -7,3 +7,23 @@
   color: aqua;
   background-color: black;
 }
+
+#btn_2{
+  width: 100px;
+  height: 50px;
+  background-color: azure;
+}
+
+h3{
+  color: aquamarine;
+}
+
+img{
+  width: 300px;
+  height: 200px;
+}
+
+#sky,
+#sky2{
+  display: none;
+}

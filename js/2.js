@@ -34,4 +34,13 @@ $(function(){
   $('#sky3').fadeOut('slow');
   $('#sky4').slideUp('slow');
 
+  // どの子要素を取得するか
+  $('#container_btn').on('click',()=>{
+    $('#container').find('a').fadeOut();
+  });
+
+  $('#container_btn2').on('click',()=>{
+    $('#container').children('a').fadeOut();
+  });
+
 });
